@@ -89,8 +89,8 @@ const iconBlock = () => {
 		loginLink.textContent = "Log Out";
 
 		if (window.location.pathname === "/products.html") {
+			console.log("Se ven iconos");
 			itemsBlock.forEach((elemento) => {
-				console.log("Se ven iconos");
 				elemento.style.display = "block";
 			});
 		}
@@ -104,6 +104,7 @@ const iconBlock = () => {
 		loginLink.textContent = "Login";
 
 		if (window.location.pathname === "/products.html") {
+			console.log("No se ven iconos");
 			itemsBlock.forEach((elemento) => {
 				console.log("No se ven iconos");
 				elemento.style.display = "none";
