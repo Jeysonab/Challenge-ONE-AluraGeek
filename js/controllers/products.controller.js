@@ -86,8 +86,9 @@ const iconBlock = () => {
 	if (sessionStorage.getItem("loggedIn")) {
 		loginLink.textContent = "Log Out";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname === "./products.html") {
 			itemsBlock.forEach((elemento) => {
+				console.log("Se ven iconos");
 				elemento.style.display = "block";
 			});
 		}
@@ -99,8 +100,9 @@ const iconBlock = () => {
 	} else {
 		loginLink.textContent = "Login";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname === "./products.html") {
 			itemsBlock.forEach((elemento) => {
+				console.log("No se ven iconos");
 				elemento.style.display = "none";
 			});
 		}
