@@ -3,7 +3,6 @@ import { productServices } from "../service/product-service.js";
 const crearNuevaTarjeta = (id, url, nombre, precio) => {
 	const productCard = document.createElement("div");
 	productCard.classList.add("all-product-card");
-	console.log("Se esta creando el templete");
 	const contenido = `
 	<img
 		src="./${url}"
@@ -71,7 +70,6 @@ productServices
 			contenedorProductos.appendChild(nuevaTarjeta);
 
 			iconBlock();
-			console.log("Si llego al funcion icon");
 			executeSearch();
 		});
 	})
@@ -85,10 +83,9 @@ const iconBlock = () => {
 	const loginLink = document.querySelector(".login__link");
 	const itemsBlock = document.querySelectorAll(".block");
 	if (sessionStorage.getItem("loggedIn")) {
-		console.log("estoy iconos");
 		loginLink.textContent = "Log Out";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname.includes("/products.html")) {
 			console.log("Se ven iconos");
 			itemsBlock.forEach((elemento) => {
 				elemento.style.display = "block";
@@ -100,13 +97,11 @@ const iconBlock = () => {
 			window.location.href = "login.html";
 		});
 	} else {
-		console.log("no estoy iconos");
 		loginLink.textContent = "Login";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname.includes("/products.html")) {
 			console.log("No se ven iconos");
 			itemsBlock.forEach((elemento) => {
-				console.log("No se ven iconos");
 				elemento.style.display = "none";
 			});
 		}
