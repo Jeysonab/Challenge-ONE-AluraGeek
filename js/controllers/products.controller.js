@@ -15,7 +15,7 @@ const crearNuevaTarjeta = (id, url, nombre, precio) => {
 	</div>
 	<p class="product-card__description">${nombre}</p>
 	<span class="product-card__price">$ ${precio},00</span>
-	<a href="/product-view.html?id=${id}" class="product-card__link">Ver producto</a>
+	<a href="product-view.html?id=${id}" class="product-card__link">Ver producto</a>
 
 	`;
 	productCard.innerHTML = contenido;
@@ -86,7 +86,7 @@ const iconBlock = () => {
 	if (sessionStorage.getItem("loggedIn")) {
 		loginLink.textContent = "Log Out";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname === "products.html") {
 			itemsBlock.forEach((elemento) => {
 				elemento.style.display = "block";
 			});
@@ -99,7 +99,7 @@ const iconBlock = () => {
 	} else {
 		loginLink.textContent = "Login";
 
-		if (window.location.pathname === "/products.html") {
+		if (window.location.pathname === "products.html") {
 			itemsBlock.forEach((elemento) => {
 				elemento.style.display = "none";
 			});

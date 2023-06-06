@@ -10,7 +10,7 @@ formulario.addEventListener("submit", (evento) => {
 	clientServices
 		.crearCliente(nombre, email, password)
 		.then(() => {
-			window.location.href = "/login.html";
+			window.location.href = "login.html";
 		})
 		.catch((error) => {
 			alert(error.message);

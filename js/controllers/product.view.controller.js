@@ -5,7 +5,7 @@ const obtenerInformacion = async () => {
 	const id = url.searchParams.get("id");
 
 	if (id === null) {
-		window.location.href = "/screens/error.html";
+		window.location.href = "error.html";
 	}
 
 	const imagen = document.querySelector("[data-imagen]");
@@ -24,7 +24,7 @@ const obtenerInformacion = async () => {
 			throw new Error();
 		}
 	} catch (error) {
-		window.location.href = "/screens/error.html";
+		window.location.href = "error.html";
 	}
 };
 
@@ -40,7 +40,7 @@ const crearNuevaTarjeta = (id, url, nombre, precio) => {
 		class="random-product-card__image" />
 	<p class="random-product-card__description">${nombre}</p>
 	<span class="random-product-card__price">$ ${precio},00</span>
-	<a href="/product-view.html?id=${id}" class="random-product-card__link">Ver producto</a>
+	<a href="product-view.html?id=${id}" class="random-product-card__link">Ver producto</a>
 
 	`;
 	randomProductCard.innerHTML = contenido;

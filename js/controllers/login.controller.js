@@ -12,7 +12,7 @@ formulario.addEventListener("submit", (event) => {
 		.verificarClientes(email, password)
 		.then(() => {
 			sessionStorage.setItem("loggedIn", true);
-			window.location.href = "/index.html";
+			window.location.href = "./index.html";
 		})
 		.catch((error) => {
 			alert(error.message);
