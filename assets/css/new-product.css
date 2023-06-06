@@ -1,0 +1,22 @@
+.new-product {
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.new-product__content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 5.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 912px) {
+	.new-product__content {
+		width: 95%;
+		padding: 2rem 0;
+	}
+}

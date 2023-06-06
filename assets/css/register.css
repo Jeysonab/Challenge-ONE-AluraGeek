@@ -1,0 +1,21 @@
+.register {
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.register__content {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 540px) {
+	.register__content {
+		padding: 2rem;
+	}
+}

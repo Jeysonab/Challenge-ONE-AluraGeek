@@ -1,0 +1,149 @@
+.register__form {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.register__form-group {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.register__form-group label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem 0.75rem;
+	pointer-events: none;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #a2a2a2;
+	transition: all 0.2s ease-out;
+}
+
+.error-container {
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: red;
+	transition: all 0.2s ease-out;
+}
+
+.register__form-group input {
+	color: #464646;
+	width: 100%;
+	padding: 1.75rem 0.75rem 0.5rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	height: 3.5rem;
+	text-align: justify;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #2a7ae4;
+}
+
+.register__form-group input::placeholder {
+	color: transparent;
+}
+
+.register__form-group input:focus + label,
+.register__form-group input:not(:placeholder-shown) + label {
+	top: -0.5rem;
+	font-size: 0.75rem;
+	color: #a2a2a2;
+}
+
+.register__form-button {
+	display: inline-block;
+	background-color: #2a7ae4;
+	font-family: "Inter", sans-serif;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.register__form-button:hover,
+.register__form-button:focus {
+	background-color: #2473da;
+}
+
+.bloqueado {
+	pointer-events: none;
+	cursor: wait;
+	background-color: #bdc1c7;
+}
+
+.error-icon {
+	color: red;
+	display: none;
+}
+
+.success-icon {
+	color: green;
+	display: none;
+}
+
+.default-icon {
+	color: #e0e0e0;
+}
+
+.register__form-group .icon-container {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+.register__form-group input:focus + label + .icon-container .success-icon {
+	display: block;
+	color: #e0e0e0;
+}
+
+.register__form-group input:focus + label + .icon-container .error-icon {
+	display: block;
+	color: #e0e0e0;
+}
+
+.register__form-group
+	input:not(:focus)
+	+ label
+	+ .icon-container
+	.success-icon {
+	display: none;
+}
+
+.register__form-group input:not(:focus) + label + .icon-container .error-icon {
+	display: none;
+}
+
+.register__form-group input:valid + label + .icon-container .success-icon {
+	color: green;
+}
+
+.register__form-group input:invalid + label + .icon-container .error-icon {
+	color: red;
+}
+
+.register__form-group input:valid + label + .icon-container .default-icon {
+	display: none;
+}
+
+@media screen and (max-width: 912px) {
+	.register__form {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.register__form {
+		width: 100%;
+	}
+
+	.register__form-group {
+		margin-bottom: 1.5rem;
+	}
+}

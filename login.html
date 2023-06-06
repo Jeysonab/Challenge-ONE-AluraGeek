@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AluraGeek</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/img/icono.ico"
+			type="image/x-icon" />
+		<!-- Script del documento CSS -->
+		<script
+			src="https://kit.fontawesome.com/41f0746332.js"
+			crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/login.css" />
+		<link rel="stylesheet" href="./assets/css/register.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/header/logo.css" />
+		<link rel="stylesheet" href="./assets/css/header/search-bar.css" />
+		<link rel="stylesheet" href="./assets/css/header/login.css" />
+		<link rel="stylesheet" href="./assets/css/login/login__title.css" />
+		<link rel="stylesheet" href="./assets/css/login/login__form.css" />
+		<link rel="stylesheet" href="./assets/css/login/login__link-register.css" />
+		<link rel="stylesheet" href="./assets/css/register/register__title.css" />
+		<link rel="stylesheet" href="./assets/css/register/register__form.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/register/register__link-login.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__menu.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__form.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__credit.css" />
+	</head>
+	<body>
+		<!-- Parte de header-->
+		<header class="header">
+			<div class="header__content">
+				<a href="/index.html" class="header__logo logo">
+					<img
+						class="logo__image"
+						src="./assets/img/Logo.svg"
+						alt="Logo de AluraGeek" />
+				</a>
+				<form class="header__search-bar search-bar" action="#" method="GET">
+					<input
+						class="search-bar__input"
+						type="text"
+						name="search"
+						placeholder="¿Qué deseas buscar?" />
+					<button class="search-bar__button" type="submit">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<div class="header__login"></div>
+		</header>
+
+		<!-- Parte de inicio de sesion-->
+		<section class="login">
+			<div class="login__content">
+				<h2 class="login__title">Iniciar Sesión</h2>
+				<form class="login__form" data-form-login>
+					<div class="login__form-group">
+						<input
+							type="email"
+							id="emailLogin"
+							name="email"
+							placeholder="Escriba su correo electrónico"
+							required
+							data-email-login />
+						<label for="emailLogin">Correo electrónico:</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<div class="login__form-group">
+						<input
+							type="password"
+							id="passwordLogin"
+							name="password"
+							placeholder="Escriba su contraseña"
+							pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$"
+							title="La contraseña debe tener al menos una mayúscula, un número y un carácter especial y debe tener al menos 8 caracteres"
+							required
+							data-password-login />
+						<label for="passwordLogin">Contraseña:</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<button class="login__form-button" type="submit">Entrar</button>
+				</form>
+				<a class="login__link-register" href="#"
+					>¿Si no tienes cuenta? Regístrate aquí</a
+				>
+			</div>
+		</section>
+
+		<!-- Parte de Registro-->
+		<section class="register" style="display: none">
+			<div class="register__content">
+				<h2 class="register__title">Registro</h2>
+				<form class="register__form" data-form-register>
+					<div class="register__form-group">
+						<input
+							type="text"
+							id="nameRegister"
+							name="name"
+							placeholder="Escribe tu nombre completo"
+							required
+							data-nombre-register />
+						<label for="nameRegister">Nombre completo:</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<div class="register__form-group">
+						<input
+							type="email"
+							id="emailRegister"
+							name="email"
+							placeholder="Escribe tu correo electrónico"
+							required
+							data-email-register />
+						<label for="emailRegister">Correo electrónico:</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<div class="register__form-group">
+						<input
+							type="password"
+							id="passwordRegisterNew"
+							name="password"
+							placeholder="Escribe tu contraseña"
+							pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$"
+							title="La contraseña debe tener al menos una mayúscula, un número y un carácter especial y debe tener al menos 8 caracteres"
+							required
+							data-password-register />
+						<label for="passwordRegisterNew">Contraseña:</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<div class="register__form-group">
+						<input
+							type="password"
+							id="passwordRegisterConfirm"
+							name="password"
+							placeholder="Confirma tu contraseña"
+							pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$"
+							title="La contraseña debe tener al menos una mayúscula, un número y un carácter especial y debe tener al menos 8 caracteres"
+							required />
+						<label for="passwordRegisterConfirm"
+							>Confirmar contraseña: <span class="error-container"></span
+						></label>
+
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<button class="register__form-button" type="submit">
+						Registrarse
+					</button>
+				</form>
+
+				<a class="register__link-login" href="#"
+					>¿Ya tienes una cuenta? Iniciar sesión aquí</a
+				>
+			</div>
+		</section>
+
+		<!-- Parte de pie de pagina-->
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__card">
+					<a href="/index.html" class="footer__logo">
+						<img src="./assets/img/Logo.svg" alt="Logo" />
+					</a>
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">Quienes somos</a></li>
+							<li><a href="#">Política de privacidad</a></li>
+							<li><a href="#">Programa de fidelidad</a></li>
+							<li><a href="#">Nuestras Tiendas</a></li>
+							<li><a href="#">Quiero ser franquiciado</a></li>
+							<li><a href="#">Anúncie aquí</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__form">
+					<h2 class="footer__form-title">Hable con nosotros</h2>
+					<form>
+						<div class="footer__form-group">
+							<input type="text" id="name" name="name" placeholder="Nombre" />
+							<label for="name">Nombre</label>
+						</div>
+						<div class="footer__form-group">
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Escribe tu mensaje"></textarea>
+							<label for="message">Escribe tu mensaje</label>
+						</div>
+						<button class="footer__form-submit" type="submit">
+							Enviar mensaje
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__credit">
+				<p>
+					AluraGeek - Challenge Alura + ONE desarrollado por Jeyson Alonso.
+					<a href="https://github.com/Jeysonab"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<br />
+					2023
+				</p>
+			</div>
+		</footer>
+		<!-- Script del documento JavaScript -->
+		<script type="module" src="./js/new-section.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+			integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script type="module" src="./js/controllers/login.controller.js"></script>
+		<script
+			type="module"
+			src="./js/controllers/registro.controller.js"></script>
+		<script src="js/search-bar.js"></script>
+	</body>
+</html>

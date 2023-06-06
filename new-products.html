@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AluraGeek</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/img/icono.ico"
+			type="image/x-icon" />
+		<!-- Script del documento CSS -->
+		<script
+			src="https://kit.fontawesome.com/41f0746332.js"
+			crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/new-product.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/header/logo.css" />
+		<link rel="stylesheet" href="./assets/css/header/search-bar.css" />
+		<link rel="stylesheet" href="./assets/css/header/login.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/new-product/new-product__title.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/new-product/new-product__form.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/register/register__link-login.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__menu.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__form.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__credit.css" />
+	</head>
+	<body>
+		<!-- Parte de header-->
+		<header class="header">
+			<div class="header__content">
+				<a href="/index.html" class="header__logo logo">
+					<img
+						class="logo__image"
+						src="./assets/img/Logo.svg"
+						alt="Logo de AluraGeek" />
+				</a>
+				<form class="header__search-bar search-bar" action="#" method="GET">
+					<input
+						class="search-bar__input"
+						type="text"
+						name="search"
+						placeholder="¿Qué deseas buscar?" />
+					<button class="search-bar__button" type="submit">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<div class="header__login">
+				<a class="login__link" href="login.html">Login</a>
+			</div>
+		</header>
+
+		<!-- Parte de nuevo producto-->
+		<section class="new-product">
+			<div class="new-product__content">
+				<h2 class="new-product__title">Agregar nuevo producto</h2>
+				<form class="new-product__form" data-form-product>
+					<div id="imagePreviewContainer"></div>
+					<div class="new-product__form-group">
+						<input
+							type="file"
+							id="imageNewProduct"
+							name="imagen"
+							accept="image/*"
+							required
+							data-url-product />
+						<input
+							type="text"
+							id="imageNewProductUrl"
+							name="imagen-url"
+							placeholder="URL de imagen"
+							readonly
+							required />
+						<label for="imagen-url">URL de imagen</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+					<div class="new-product__form-group">
+						<label for="categoryNewProduct">Categoría</label>
+						<select
+							id="categoryNewProduct"
+							name="category"
+							required
+							data-category-product>
+							<option value="" disabled selected></option>
+							<option value="Star Wars">Star Wars</option>
+							<option value="Consolas">Consolas</option>
+							<option value="Diversos">Diversos</option>
+						</select>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+
+					<div class="new-product__form-group">
+						<input
+							type="text"
+							id="nameNewProduct"
+							name="nameProduct"
+							placeholder="Nombre del producto"
+							required
+							data-name-product />
+						<label for="nameProduct">Nombre del producto</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+
+					<div class="new-product__form-group">
+						<input
+							type="text"
+							id="priceNewProduct"
+							name="priceProduct"
+							placeholder="Precio del producto"
+							pattern="[0-9]*"
+							inputmode="numeric"
+							required
+							data-price-product />
+						<label for="priceProduct">Precio del produtco</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+
+					<div class="new-product__form-group">
+						<textarea
+							id="descriptionNewProduct"
+							name="descriptionProduct"
+							placeholder="Descripción del producto"
+							minlength="20"
+							maxlength="250"
+							required
+							data-description-product></textarea>
+						<label for="descriptionProduct">Descripción del producto</label>
+						<div class="icon-container">
+							<i class="fa fa-times-circle error-icon"></i>
+							<i class="fa fa-check-circle success-icon"></i>
+							<i class="fa fa-circle default-icon"></i>
+						</div>
+					</div>
+
+					<button class="new-product__form-button" type="submit">
+						Agregar producto
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Parte de pie de pagina-->
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__card">
+					<a href="/index.html" class="footer__logo">
+						<img src="./assets/img/Logo.svg" alt="Logo" />
+					</a>
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">Quienes somos</a></li>
+							<li><a href="#">Política de privacidad</a></li>
+							<li><a href="#">Programa de fidelidad</a></li>
+							<li><a href="#">Nuestras Tiendas</a></li>
+							<li><a href="#">Quiero ser franquiciado</a></li>
+							<li><a href="#">Anúncie aquí</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__form">
+					<h2 class="footer__form-title">Hable con nosotros</h2>
+					<form>
+						<div class="footer__form-group">
+							<input type="text" id="name" name="name" placeholder="Nombre" />
+							<label for="name">Nombre</label>
+						</div>
+						<div class="footer__form-group">
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Escribe tu mensaje"></textarea>
+							<label for="message">Escribe tu mensaje</label>
+						</div>
+						<button class="footer__form-submit" type="submit">
+							Enviar mensaje
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__credit">
+				<p>
+					AluraGeek - Challenge Alura + ONE desarrollado por Jeyson Alonso.
+					<a href="https://github.com/Jeysonab"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<br />
+					2023
+				</p>
+			</div>
+		</footer>
+		<!-- Script del documento JavaScript -->
+		<script type="module" src="js/login-button.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+			integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script
+			type="module"
+			src="./js/controllers/new-product.controller.js"></script>
+		<script type="module" src="./js/load-image.js"></script>
+		<script src="js/search-bar.js"></script>
+	</body>
+</html>

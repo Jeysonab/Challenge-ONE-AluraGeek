@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AluraGeek</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/img/icono.ico"
+			type="image/x-icon" />
+		<!-- Script del documento CSS -->
+		<script
+			src="https://kit.fontawesome.com/41f0746332.js"
+			crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/banner.css" />
+		<link rel="stylesheet" href="./assets/css/products.css" />
+		<link rel="stylesheet" href="./assets/css/footer.css" />
+		<link rel="stylesheet" href="./assets/css/header/search-bar.css" />
+		<link rel="stylesheet" href="./assets/css/header/logo.css" />
+		<link rel="stylesheet" href="./assets/css/header/login.css" />
+		<link rel="stylesheet" href="./assets/css/banner/banner__title.css" />
+		<link rel="stylesheet" href="./assets/css/banner/banner__description.css" />
+		<link rel="stylesheet" href="./assets/css/banner/banner__button.css" />
+		<link rel="stylesheet" href="./assets/css/products/products__title.css" />
+		<link rel="stylesheet" href="./assets/css/products/products__link.css" />
+		<link rel="stylesheet" href="./assets/css/products/products__cards.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__menu.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__form.css" />
+		<link rel="stylesheet" href="./assets/css/footer/footer__credit.css" />
+	</head>
+	<body>
+		<!-- Parte de header-->
+		<header class="header">
+			<div class="header__content">
+				<a href="/index.html" class="header__logo logo">
+					<img
+						class="logo__image"
+						src="./assets/img/Logo.svg"
+						alt="Logo de AluraGeek" />
+				</a>
+				<form class="header__search-bar search-bar" action="#" method="GET">
+					<input
+						class="search-bar__input"
+						type="text"
+						name="search"
+						placeholder="¿Qué deseas buscar?" />
+					<button class="search-bar__button" type="submit">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<div class="header__login">
+				<a class="login__link" href="login.html">Login</a>
+			</div>
+		</header>
+		<!-- Parte de banner-->
+		<section class="banner">
+			<div class="banner__content">
+				<div class="banner__information">
+					<h2 class="banner__title">Febrero Promocional</h2>
+					<p class="banner__description">
+						Productos seleccionados con 33% de descuento
+					</p>
+					<a href="#" class="banner__button button">Ver Consolas</a>
+				</div>
+			</div>
+		</section>
+		<!-- Sección uno de productos -->
+		<section class="products">
+			<div class="products__content">
+				<h2 class="products__title">Star Wars</h2>
+				<a href="/products.html" class="products__link"
+					>Ver todo <i class="fa-sharp fa-solid fa-arrow-right"></i
+				></a>
+				<div class="products__cards">
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-1.png"
+							alt="Imagen de vaso de Stormtrooper"
+							class="product-card__image" />
+						<p class="product-card__description">Vaso de Stormtrooper</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=1" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-2.png"
+							alt="Imegen de figura darth vader lego"
+							class="product-card__image" />
+						<p class="product-card__description">Darth Vader lego</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=2" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-3.png"
+							alt="Imagen de figura de yoda"
+							class="product-card__image" />
+						<p class="product-card__description">Figura de Yoda</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=3" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-4.png"
+							alt="Imagen de figura de Stormtrooper"
+							class="product-card__image" />
+						<p class="product-card__description">Figura de Stormtrooper</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=4" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-5.png"
+							alt="Imagen de figura bebe Yoda"
+							class="product-card__image" />
+						<p class="product-card__description">Figura de bebe Yoda</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=5" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/producto-6.png"
+							alt="Imagen de disfraz de Kylo Ren"
+							class="product-card__image" />
+						<p class="product-card__description">Disfraz de Kylo Ren</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=6" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Sección dos de productos -->
+		<section class="products">
+			<div class="products__content">
+				<h2 class="products__title">Consolas</h2>
+				<a href="/products.html" class="products__link"
+					>Ver todo <i class="fa-sharp fa-solid fa-arrow-right"></i
+				></a>
+				<div class="products__cards">
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-1.png"
+							alt="Imagen de control Xbox One"
+							class="product-card__image" />
+						<p class="product-card__description">Control Xbox One</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=7" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-2.png"
+							alt="Imagen de consola playstation 5"
+							class="product-card__image" />
+						<p class="product-card__description">Consola playstation 5</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=8" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-3.png"
+							alt="Imagen de consola Nintendo NES"
+							class="product-card__image" />
+						<p class="product-card__description">Consola Nintendo NES</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=9" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-4.png"
+							alt="Imagen de control Nintendo Switch"
+							class="product-card__image" />
+						<p class="product-card__description">Control Nintendo Switch</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=10" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-5.png"
+							alt="Imagen de consola Xbox series X"
+							class="product-card__image" />
+						<p class="product-card__description">Consola Xbox series X</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=11" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/consola-6.png"
+							alt="Imagen consola Game Boy Color"
+							class="product-card__image" />
+						<p class="product-card__description">Consola Game Boy Color</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=12" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Sección tres de productos -->
+		<section class="products">
+			<div class="products__content">
+				<h2 class="products__title">Diversos</h2>
+				<a href="/products.html" class="products__link"
+					>Ver todo <i class="fa-sharp fa-solid fa-arrow-right"></i
+				></a>
+				<div class="products__cards">
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-1.png"
+							alt="Imagen camisa logo Atari"
+							class="product-card__image" />
+						<p class="product-card__description">Camisa logo Atari</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=13" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-2.png"
+							alt="Imagen camisa de Nintendo NES"
+							class="product-card__image" />
+						<p class="product-card__description">Camisa de Nintendo NES</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=14" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-3.png"
+							alt="Imagen de figura de Sonic"
+							class="product-card__image" />
+						<p class="product-card__description">Figura de Sonic</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=15" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-4.png"
+							alt="Imagen de articulo radio retro gamer"
+							class="product-card__image" />
+						<p class="product-card__description">Articulo radio retro gamer</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=16" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-5.png"
+							alt="Imagen de gafa de Oculus VR"
+							class="product-card__image" />
+						<p class="product-card__description">Gafa de Oculus VR</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=17" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+					<div class="product-card">
+						<img
+							src="./assets/img/otro-producto-6.png"
+							alt="Imagen de disfraz de Pikachu"
+							class="product-card__image" />
+						<p class="product-card__description">Disfraz de Pikachu</p>
+						<span class="product-card__price">$ 60,00</span>
+						<a href="/product-view.html?id=18" class="product-card__link"
+							>Ver producto</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Parte de pie de pagina-->
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__card">
+					<a href="/index.html" class="footer__logo">
+						<img src="./assets/img/Logo.svg" alt="Logo" />
+					</a>
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">Quienes somos</a></li>
+							<li><a href="#">Política de privacidad</a></li>
+							<li><a href="#">Programa de fidelidad</a></li>
+							<li><a href="#">Nuestras Tiendas</a></li>
+							<li><a href="#">Quiero ser franquiciado</a></li>
+							<li><a href="#">Anúncie aquí</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__form">
+					<h2 class="footer__form-title">Hable con nosotros</h2>
+					<form>
+						<div class="footer__form-group">
+							<input type="text" id="name" name="name" placeholder="Nombre" />
+							<label for="name">Nombre</label>
+						</div>
+						<div class="footer__form-group">
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Escribe tu mensaje"></textarea>
+							<label for="message">Escribe tu mensaje</label>
+						</div>
+						<button class="footer__form-submit" type="submit">
+							Enviar mensaje
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__credit">
+				<p>
+					AluraGeek - Challenge Alura + ONE desarrollado por Jeyson Alonso.
+					<a href="https://github.com/Jeysonab"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<br />
+					2023
+				</p>
+			</div>
+		</footer>
+		<!-- Script del documento JavaScript -->
+		<script type="module" src="js/login-button.js"></script>
+		<script src="js/search-bar.js"></script>
+	</body>
+</html>

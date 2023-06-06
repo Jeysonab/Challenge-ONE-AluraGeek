@@ -1,0 +1,187 @@
+{
+  "usuarios": [
+    {
+      "id": "f2cc358d-4c6b-41bf-bae8-a2978f17b74e",
+      "nombre": "Jeyson Alonso",
+      "email": "jalonso@cpes.com",
+      "contraseña": "123456"
+    },
+    {
+      "id": "f2cc358d-4c6b-41bf-bae8-a2978f17b747",
+      "nombre": "Yenni Chacon",
+      "email": "ychacon@cpes.com",
+      "contraseña": "654321"
+    },
+    {
+      "id": "f32840c2-3bc1-4bf9-905f-4f0b26a3e8e0",
+      "nombre": "Jeyson Andres Alonso Bolaños",
+      "email": "jalonso@cpes.com",
+      "password": "Jenny1295**"
+    },
+    {
+      "id": "7ebe86eb-9ee0-47b0-b941-ce07ffd52f2c",
+      "nombre": "Estevan Castro",
+      "email": "ecastro@cpe.com",
+      "password": "Castro2023*"
+    },
+    {
+      "id": "507254fd-27a6-40b0-8b5d-f4d81a2c6622",
+      "nombre": "Paola Chacon",
+      "email": "pchacon@cpes.com",
+      "password": "Paola2023*"
+    },
+    {
+      "id": "e374259d-3559-4cf7-945c-bcc0dae2bb9b",
+      "nombre": "yenni chacon",
+      "email": "yenni12959@gmail.com",
+      "password": "Chacon1295*"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "url": "assets/img/producto-1.png",
+      "categoria": "Star Wars",
+      "nombre": "Vaso de Stormtrooper",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "2",
+      "url": "assets/img/producto-2.png",
+      "categoria": "Star Wars",
+      "nombre": "Darth Vader lego",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "3",
+      "url": "assets/img/producto-3.png",
+      "categoria": "Star Wars",
+      "nombre": "Figura de Yoda",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "4",
+      "url": "assets/img/producto-4.png",
+      "categoria": "Star Wars",
+      "nombre": "Figura de Stormtrooper",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "5",
+      "url": "assets/img/producto-5.png",
+      "categoria": "Star Wars",
+      "nombre": "Figura de bebe Yoda",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "6",
+      "url": "assets/img/producto-6.png",
+      "categoria": "Star Wars",
+      "nombre": "Disfraz de Kylo Ren",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "7",
+      "url": "assets/img/consola-1.png",
+      "categoria": "Consolas",
+      "nombre": "Control Xbox One",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "8",
+      "url": "assets/img/consola-2.png",
+      "categoria": "Consolas",
+      "nombre": "Consola playstation 5",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "9",
+      "url": "assets/img/consola-3.png",
+      "categoria": "Consolas",
+      "nombre": "Consola Nintendo NES",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "10",
+      "url": "assets/img/consola-4.png",
+      "categoria": "Consolas",
+      "nombre": "Control Nintendo Switch",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "11",
+      "url": "assets/img/consola-5.png",
+      "categoria": "Consolas",
+      "nombre": "Consola Xbox series X",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "12",
+      "url": "assets/img/consola-6.png",
+      "categoria": "Consolas",
+      "nombre": "Consola Game Boy Color",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "13",
+      "url": "assets/img/otro-producto-1.png",
+      "categoria": "Diversos",
+      "nombre": "Camisa logo Atari",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "14",
+      "url": "assets/img/otro-producto-2.png",
+      "categoria": "Diversos",
+      "nombre": "Camisa de Nintendo NES",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "15",
+      "url": "assets/img/otro-producto-3.png",
+      "categoria": "Diversos",
+      "nombre": "Figura de Sonic",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "16",
+      "url": "assets/img/otro-producto-4.png",
+      "categoria": "Diversos",
+      "nombre": "Articulo radio retro gamer",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "17",
+      "url": "assets/img/otro-producto-5.png",
+      "categoria": "Diversos",
+      "nombre": "Gafa de Oculus VR",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    },
+    {
+      "id": "18",
+      "url": "assets/img/otro-producto-6.png",
+      "categoria": "Diversos",
+      "nombre": "Disfraz de Pikachu",
+      "precio": "60",
+      "descripcion": "Este objeto de venta es una herramienta valiosa para cualquier persona que busque mejorar su productividad y comodidad en su vida diaria. Con su diseño versátil y características intuitivas, este objeto puede ayudarte a cumplir una variedad de funciones y hacer tu vida más fácil y eficiente."
+    }
+
+  ]
+}

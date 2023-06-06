@@ -1,0 +1,28 @@
+.products {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 4rem;
+}
+
+.products__content {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 912px) {
+	.products__content {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.products {
+		padding-bottom: 3rem;
+	}
+	.products__content {
+		width: 96%;
+	}
+}

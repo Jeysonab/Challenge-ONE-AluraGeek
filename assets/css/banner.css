@@ -1,0 +1,38 @@
+.banner {
+	padding-bottom: 4rem;
+}
+
+.banner__content {
+	height: 22rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-image: url(/assets/img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.banner__information {
+	width: 70%;
+	background-color: transparent;
+	padding: 3rem;
+}
+
+@media screen and (max-width: 912px) {
+	.banner__information {
+		width: 95%;
+		padding: 3rem 1rem;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.banner {
+		padding-bottom: 3rem;
+	}
+	.banner__content {
+		height: 15rem;
+	}
+	.banner__information {
+		width: 96%;
+		padding: 1rem;
+	}
+}

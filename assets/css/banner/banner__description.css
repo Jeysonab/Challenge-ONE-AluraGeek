@@ -1,0 +1,13 @@
+.banner__description {
+	font-size: 1.375rem;
+	font-weight: 700;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 540px) {
+	.banner__description {
+		font-size: 0.875rem;
+	}
+}

@@ -1,0 +1,12 @@
+.register__link-login {
+	font-size: 0.8rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: #a2a2a2;
+	text-align: center;
+	padding: 1.5rem 1rem;
+}
+
+.register__link-login:hover {
+	color: #2a7ae4;
+}

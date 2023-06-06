@@ -1,0 +1,20 @@
+.all-products__link {
+	display: inline-block;
+	background-color: #2a7ae4;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+}
+
+.all-products__link:hover,
+.all-products__link:focus {
+	background-color: #2473da;
+}
+
+@media screen and (max-width: 540px) {
+	.all-products__link {
+		margin-top: 1rem;
+	}
+}

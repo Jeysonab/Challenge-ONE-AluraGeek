@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	height: 115px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 912px) {
+	.header {
+		width: 95%;
+		height: 72px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.header__content {
+		width: 100%;
+	}
+}
